@@ -1,6 +1,6 @@
 # COMP 271 F17 002 Lab 2
 
-# Team project
+# Team project john was here
 
 Work in teams of two
 
