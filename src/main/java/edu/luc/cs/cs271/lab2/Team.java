@@ -16,9 +16,17 @@ public class Team {
     if (name == null) {
       throw new IllegalArgumentException("name is null");
     }
-    // TODO validity checking for headcoach
-    // TODO validity checking for funding
+    // DONE validity checking for headcoach
+    // DONE validity checking for funding
+    else if(headcoach == null){
+      throw new IllegalArgumentException("headcoach is null");
+    }
+    else if(funding == null){
+      throw new IllegalArgumentException("funding is null")
+    }
     this.name = name;
+    this.headcoach = headcoach;
+    this.funding = funding;
     // TODO complete this constructor
   }
 
