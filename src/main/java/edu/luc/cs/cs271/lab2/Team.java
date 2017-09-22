@@ -27,7 +27,7 @@ public class Team {
     this.name = name;
     this.headcoach = headcoach;
     this.funding = funding;
-    // TODO complete this constructor
+    // DONE complete this constructor
   }
 
   /** Returns the team's name. */
@@ -37,8 +37,9 @@ public class Team {
 
   /** Returns the team's head coach. */
   public String getHeadcoach() {
-    // TODO complete this method
-    return null;
+    // DONE complete this method
+    return this.headcoach;
+    //return null;
   }
 
   /** Returns the team's funding level. */
