@@ -23,7 +23,18 @@ public class Search {
 
   /** Looks for the position of the named team in a list. */
   public static Optional<Integer> findTeamPosition(final List<Team> list, final String key) {
-    // TODO complete this method
+    // DONE complete this method
+    //Gets array list size
+    final int size = arr.length;
+    //Runs through array list
+    for(int i = 0; i < size; i++){
+      //Gets current item at index and compare name to key
+      if(list.contains(i).getName().equal(key)){
+        //return the index of where the item with the key is located
+        return Optional.of(i);
+      }
+    }
+    //If it does not exist in the array then return an index of -1
     return Optional.empty();
   }
   
