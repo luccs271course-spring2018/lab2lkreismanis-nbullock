@@ -35,7 +35,8 @@ public class Team {
 
   /** Returns the team's funding level. */
   public int getFunding() {
-    // TODO complete this method
-    return -1;
+    // DONE complete this method
+    return this.funding;
+    //return -1;
   }
 }
