@@ -1,6 +1,6 @@
 # COMP 271 F17 002 Lab 2
 
-# Team project john was here
+# By Larisa Kreismanis and Nathan Bullock
 
 Work in teams of two
 
