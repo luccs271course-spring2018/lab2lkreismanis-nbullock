@@ -2,6 +2,7 @@ package edu.luc.cs.cs271.lab2;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.*;
 
 public class Search {
 
@@ -25,11 +26,11 @@ public class Search {
   public static Optional<Integer> findTeamPosition(final List<Team> list, final String key) {
     // DONE complete this method
     //Gets array list size
-    final int size = arr.length;
+    final int size = list.size();
     //Runs through array list
     for(int i = 0; i < size; i++){
       //Gets current item at index and compare name to key
-      if(list.contains(i).getName().equals(key)){
+      if(list.get(i).getName().equals(key)){
         //return the index of where the item with the key is located
         return Optional.of(i);
       }
@@ -48,8 +49,8 @@ public class Search {
   public static Optional<Integer> findTeamMinFunding(final Team[] arr, final int minFunding) {
     // Maybe DONE complete this method
     final int size = arr.length;
-    for(i=0; i < size; i++){
-      if(arr[i].getFunding().equals(minFunding){
+    for(int i=0; i < size; i++){
+      if(arr[i].getFunding() >= minFunding){
         return Optional.of(i);
       }
     }

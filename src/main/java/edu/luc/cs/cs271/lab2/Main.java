@@ -57,8 +57,9 @@ public class Main {
       System.out.println("Array index: " + pos);
       System.out.println("Ranking: " + (pos + 1));
       */
-      team.format();
-    } else {
+      format(team, pos);
+    } 
+    else {
       System.out.println("Not Found!");
     }
   }
@@ -76,13 +77,14 @@ public class Main {
       System.out.println("Array index: " + pos);
       System.out.println("Ranking: " + (pos + 1));
       */
-      team.format();
-    } else {
+      format(team, pos);
+    } 
+    else {
       System.out.println("Not Found!");
     }
   }
   
-  public static void format(){
+  static public void format(Team team, int pos){
     System.out.println("Name: " + team.getName());
     System.out.println("Head coach: " + team.getHeadcoach());
     System.out.println("Funding: " + team.getFunding());

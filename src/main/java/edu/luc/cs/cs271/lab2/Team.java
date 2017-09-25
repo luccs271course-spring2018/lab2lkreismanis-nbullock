@@ -21,8 +21,8 @@ public class Team {
     else if(headcoach == null){
       throw new IllegalArgumentException("headcoach is null");
     }
-    else if(funding == null){
-      throw new IllegalArgumentException("funding is null")
+    else if(funding == 0){
+      throw new IllegalArgumentException("funding is 0");
     }
     this.name = name;
     this.headcoach = headcoach;
