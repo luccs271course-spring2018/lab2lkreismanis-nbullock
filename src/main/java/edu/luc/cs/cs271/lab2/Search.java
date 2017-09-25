@@ -29,14 +29,15 @@ public class Search {
     //Runs through array list
     for(int i = 0; i < size; i++){
       //Gets current item at index and compare name to key
-      if(list.contains(i).getName().equal(key)){
+      if(list.contains(i).getName().equals(key)){
         //return the index of where the item with the key is located
         return Optional.of(i);
       }
-    }
     //If it does not exist in the array then return an index of -1
+      }
     return Optional.empty();
   }
+  
   
   /** 
    * Looks for the position of the poorest team that has at least 
@@ -47,16 +48,11 @@ public class Search {
   public static Optional<Integer> findTeamMinFunding(final Team[] arr, final int minFunding) {
     // Maybe DONE complete this method
     final int size = arr.length;
-    for
     for(i=0; i < size; i++){
-      if(arr[i].funding() < arr[i+1].funding()){
-        minFunding = arr[i].funding();
-      }
-      else if(arr[i].funding().equals(minFunding){
+      if(arr[i].getFunding().equals(minFunding){
         return Optional.of(i);
       }
     }
-    
     return Optional.empty();
   }
   
@@ -79,9 +75,22 @@ public class Search {
     // Keep going as long as there is more than one item to be checked
     // Eliminate the wrong half of the array
     // Return current item only if it meets the condition!
+    while( high - low >= 0){
+      int mid = (high + low) / 2;
+      if(minFunding <= arr[mid].getFunding()){
+        high = mid;
+      }
+      else if(minFunding >= arr[mid].getFunding()){
+        low = mid + 1;
+      }
+      else{
+        return Optional.of(mid);
+      }
+      }
     if (low <= high && arr[low].getFunding() >= minFunding) {
-      return Optional.of(low);
-    } else {
+        return Optional.of(low);
+      }
+    else {
       return Optional.empty();
     }
   }
