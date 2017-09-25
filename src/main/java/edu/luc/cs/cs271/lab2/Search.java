@@ -78,7 +78,7 @@ public class Search {
     while( high - low >= 0){
       int mid = (high + low) / 2;
       if(minFunding <= arr[mid].getFunding()){
-        high = mid;
+        high = mid - 1;
       }
       else if(minFunding >= arr[mid].getFunding()){
         low = mid + 1;
