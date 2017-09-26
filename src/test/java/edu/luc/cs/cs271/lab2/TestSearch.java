@@ -62,7 +62,7 @@ public class TestSearch {
     assertFalse(Search.findTeamPosition(list, "Team 11").isPresent());
   }
   
-  // TODO: testFindMinFundingArray for several sizes and scenarios
+  // DONE: testFindMinFundingArray for several sizes and scenarios
   @Test
   public void testFindMinFundingArray() {
     final Team[] array = makeArrayFixture(5);
